@@ -1,0 +1,25 @@
+[build-system]
+requires = [
+	"flit_core >=3.2,<4",
+	"python_version >= '3.7'"
+	]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "nn"
+authors = [{name = "Shreya Menon", email = "shreya.menon@ucsf.edu"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version", "description"]
+dependencies = [
+    "pytest>=3.0",
+    "numpy",
+    "scikit-learn",
+    "matplotlib",
+    "typing",
+    "itertools"
+]
+
+[project.urls]
+Home = "https://github.com/smenon2/final-nn-shreya.git"
